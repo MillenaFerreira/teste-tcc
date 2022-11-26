@@ -1,8 +1,60 @@
+.sobre{
+  background-color: #99EBE9;
+  grid-area: sobre;
+  display:grid;
+  grid-template-areas: "imagem description";
+  grid-template-columns: 1fr 1fr;
+  
+}
+.description{
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.description-title{
+  font-size: 3.5rem;
+}
+.description-text{
+  font-size: 1.25rem;
+  padding-top: 50px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-align: center;
+}
 
-  .pic-ctn {
-    width: 90vw;
-    height: 50%;
-  }
+.button{
+  position: relative;
+  transform: translateY(100px);
+  font-size: 1.25rem;
+  background-color: #B682F6;
+  border: 2px solid #97B1BF;
+  width: 50%;
+  height: 10vh;
+  border-radius: 0.6em;
+  cursor: pointer;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+
+.button:hover{
+ background:#862ff0;
+ box-shadow:0px 4px 10px 5px #97B1BF;
+ color:#000;
+}
+
+
+
+
+  
   
   @keyframes display {
     0% {
@@ -36,13 +88,12 @@
     }
   }
   
-  .pic-ctn {
+   .pic-ctn {
+    grid-area: imagem;
     position: relative;
-    width: 90vw;
-    height: 50%;
-    margin: 10vh;
-    
-  }
+    width: 50vw;
+    height: 100%;
+  } 
   
   .pic-ctn > img {
     position: absolute;

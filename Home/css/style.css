@@ -1,5 +1,7 @@
 body{
     background-color: chocolate;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 header{
@@ -8,5 +10,7 @@ header{
     width: 100%;
 }
 section{
-    height: 100vh;
+    height: 110vh;
 }
+
+
