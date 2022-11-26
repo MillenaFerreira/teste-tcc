@@ -1,0 +1,10 @@
+.inicio{
+    background-color: blue;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio img{
+    width: 75%;
+}
