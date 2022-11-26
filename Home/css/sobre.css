@@ -1,4 +1,4 @@
-.sobre{
+.sobre{  
   background-color: #99EBE9;
   grid-area: sobre;
   display:grid;
@@ -58,47 +58,48 @@
   
   @keyframes display {
     0% {
-      transform: translateX(200px);
+      transform: translateZ(200px);
       opacity: 0;
     }
     10% {
-      transform: translateX(0);
+      transform: translateZ(0);
       opacity: 1;
     }
     20% {
-      transform: translateX(0);
+      transform: translateZ(0);
       opacity: 1;
     }
     30% {
-      transform: translateX(-200px);
+      transform: translateZ(-200px);
       opacity: 0;
     }
     50% {
-      transform: translateX(-200px);
+      transform: translateZ(-200px);
       opacity: 0;
     }
     70% {
-      transform: translateX(-200px);
+      transform: translateZ(-200px);
       opacity: 0;
     }
 
     100% {
-      transform: translateX(-200px);
+      transform: translateZ(-200px);
       opacity: 0;
     }
   }
   
    .pic-ctn {
+    align-items: center;
     grid-area: imagem;
     position: relative;
-    width: 50vw;
+    width: 50%;
     height: 100%;
+    margin-top: 5vh;
+    margin-left: 5vh;
   } 
   
   .pic-ctn > img {
     position: absolute;
-    top: 0;
-    left: calc(10% - 50px);
     opacity: 0;
     animation: display 60s infinite;
   }
@@ -120,4 +121,41 @@
   }
   img:nth-child(7) {
     animation-delay: 60s;
+  }
+
+  @media (max-width: 999px) {
+    .description-title{
+      font-size: 3rem;
+    }
+    .description-text{
+      font-size: 1rem;
+    }
+    .button{
+      font-size: 1rem;
+      transform: translateY(50px);
+      height: 7vh;
+    }
+
+  }
+  @media(max-width: 600px){
+    .sobre{
+      background-color: #99EBE9;
+      grid-area: sobre;
+      display:grid;
+      grid-template-areas: "imagem imagem"
+      "description description";
+      grid-template-columns: 1fr 1fr;
+    }
+    .pic-ctn{
+      margin-left: 5vh;
+    }
+    .pic-ctn img{
+      height: 500px;
+    }
+    .description{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 50vh;
+    }
+    
   }
