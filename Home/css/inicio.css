@@ -1,9 +1,10 @@
 .inicio{
-    background-color: blue;
+    background-color: #C9FBFA;
     height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 0px -40px 40px #99EBE9;
 }
 .inicio img{
     width: 75%;

@@ -4,7 +4,7 @@
   display:grid;
   grid-template-areas: "imagem description";
   grid-template-columns: 1fr 1fr;
-  
+  box-shadow: inset 0px -40px 40px #69DAD8;
 }
 .description{
   grid-area: description;
