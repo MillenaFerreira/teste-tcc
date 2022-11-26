@@ -40,7 +40,8 @@
     position: relative;
     width: 90vw;
     height: 50%;
-    margin-top: 5vh;
+    margin: 10vh;
+    
   }
   
   .pic-ctn > img {
