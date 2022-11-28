@@ -1,0 +1,22 @@
+body{
+    background-color: #69DAD8;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+header{
+    background-color: #00c7c4;
+    height: 15vh;
+    width: 100%;
+}
+section{
+    height: 110vh;
+}
+
+
+@media(max-width: 600px){
+    section{
+        height: 150vh;
+    }
+}
+
