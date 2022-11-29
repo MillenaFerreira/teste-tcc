@@ -5,6 +5,7 @@
   grid-template-areas: "imagem description";
   grid-template-columns: 1fr 1fr;
   box-shadow: inset 0px -40px 40px #69DAD8;
+  padding-right: 3vw;
 }
 .description{
   grid-area: description;
@@ -22,7 +23,7 @@
   padding-top: 50px;
   padding-left: 1vw;
   padding-right: 1vw;
-  text-align: center;
+  text-align: justify;
 }
 
 .button{
@@ -31,7 +32,7 @@
   font-size: 1.25rem;
   background-color: #B682F6;
   border: 2px solid #97B1BF;
-  width: 50%;
+  width: 60%;
   height: 10vh;
   border-radius: 0.6em;
   cursor: pointer;
@@ -145,6 +146,7 @@
       grid-template-areas: "imagem imagem"
       "description description";
       grid-template-columns: 1fr 1fr;
+      padding-left: 2vh;
     }
     .pic-ctn{
       margin-left: 5vh;
@@ -158,4 +160,10 @@
       margin-top: 50vh;
     }
     
+    
+  }
+  @media(max-width: 500px){
+    .button{
+      width: 80%;
+    }
   }

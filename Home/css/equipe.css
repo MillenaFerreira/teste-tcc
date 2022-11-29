@@ -24,6 +24,7 @@
     font-size: 2em;
     text-transform: uppercase;
     color: #ffff;
+    text-shadow: 0.1em 0.1em 0.2em black
   }
  
   
@@ -36,5 +37,6 @@
     .content h1 {
         font-size: 1.25em;
       }
+      
   }
   
