@@ -14,9 +14,14 @@ section{
 }
 
 
-@media(max-width: 600px){
+@media(max-width: 999px){
     section{
         height: 150vh;
     }
 }
 
+@media(max-width: 600px){
+    section{
+        height: 190vh;
+    }
+}

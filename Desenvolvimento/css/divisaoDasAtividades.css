@@ -1,0 +1,59 @@
+.divisaoDasAtividades{ 
+
+    padding-left: 5%;
+    padding-top: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 20px;
+}
+
+.card {
+    flex: 0 0 100%;
+    padding: 30px;
+    scroll-snap-align: start;
+    border-radius: 30px;
+}
+
+.card h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(-229deg, #0093E9, #80D0C7);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(-229deg, #50d990, #d4d054);
+}
+
+@media(max-width: 999px){
+    .divisaoDasAtividades{
+        height: 90vh;
+        padding-top: 0%;
+    }
+    .conteudo{
+        height: 80%;
+    }
+}
+@media(max-width: 600px){
+
+    .divisaoDasAtividades{
+        display: none;
+    }
+
+}

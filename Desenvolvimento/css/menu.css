@@ -51,6 +51,7 @@
      overflow-x: hidden;
    }
    .nav-list {
+    display: none;
      position: absolute;
      top: 15vh;
      right: 0;
