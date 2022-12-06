@@ -1,0 +1,34 @@
+.footer-section{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer{
+    box-shadow: inset 0px -40px 40px #8be9e7;
+    background-color: #0BB9B7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+.social-media{
+    padding-top: 2vh;
+}
+.direitos{
+    padding-top: 2vh;
+}
+
+@media (max-width: 600px) {
+    .direitos{
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 460px) {
+    .direitos{
+        font-size: 0.55rem;
+        padding-top: 3vh;
+    }
+}

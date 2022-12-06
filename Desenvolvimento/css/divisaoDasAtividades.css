@@ -1,9 +1,9 @@
 .divisaoDasAtividades{ 
-
+    padding-top: 5%;
     padding-left: 5%;
-    padding-top: 20%;
     display: flex;
     align-items: center;
+    height: 60vh;
 }
 
 .conteudo {
@@ -20,14 +20,21 @@
     padding: 30px;
     scroll-snap-align: start;
     border-radius: 30px;
+    text-align: center;
+    height: 120px;
+    overflow: hidden;
+    transition: all 1s;
+    cursor: pointer; 
 }
 
 .card h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
+
 
 .card:nth-child(1) {
     background: linear-gradient(-229deg, #00DBDE, #FC00FF);
@@ -41,9 +48,12 @@
     background: linear-gradient(-229deg, #50d990, #d4d054);
 }
 
+ .card:hover{
+    height: 500px;
+} 
+
 @media(max-width: 999px){
     .divisaoDasAtividades{
-        height: 90vh;
         padding-top: 0%;
     }
     .conteudo{
@@ -52,8 +62,11 @@
 }
 @media(max-width: 600px){
 
-    .divisaoDasAtividades{
-        display: none;
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        gap: 10%;
     }
-
+    
 }

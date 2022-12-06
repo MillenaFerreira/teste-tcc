@@ -1,4 +1,6 @@
-
+.processo{
+    height: 90vh;
+}
 .card-processo{
     display: flex;
     justify-items: center;
@@ -29,6 +31,13 @@
 .description-text-processo{
     font-size: 1.10rem;
     margin-top: 5vh;
+}
+.card-text{
+    display: flex;
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0.2em 0.2em 0.4em black;
 }
 
 @media(max-width: 500px){

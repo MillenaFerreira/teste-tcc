@@ -1,3 +1,8 @@
+html, body{
+  position: relative;
+  overflow-x: hidden;
+}
+
 .logo {
      width: 96px;
      height: 82px;
@@ -51,7 +56,6 @@
       overflow-x: hidden;
     }
     .nav-list {
-      display: none;
       position: absolute;
       top: 15vh;
       right: 0;

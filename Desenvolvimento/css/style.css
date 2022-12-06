@@ -1,3 +1,7 @@
+html, body{
+    position: relative;
+    overflow-x: hidden;
+}
 body{
     background-color: #69DAD8;
     word-wrap: break-word;
@@ -15,13 +19,11 @@ section{
 
 
 @media(max-width: 999px){
-    section{
-        height: 150vh;
-    }
+    
 }
 
 @media(max-width: 600px){
     section{
-        height: 190vh;
+        height: 140vh;
     }
 }
