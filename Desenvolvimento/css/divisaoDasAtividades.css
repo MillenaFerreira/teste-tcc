@@ -49,24 +49,48 @@
 }
 
  .card:hover{
-    height: 500px;
+    height: 550px;
 } 
 
 @media(max-width: 999px){
     .divisaoDasAtividades{
-        padding-top: 0%;
+        height: auto;
+        padding-top: 10%;
     }
     .conteudo{
         height: 80%;
     }
+    
+}
+@media(max-width: 720px){
+    .card:hover{
+        height: 800px;
+    } 
+    .card{
+        padding: 0%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+    .card h1{
+        font-size: 1.75rem;
+    }
 }
 @media(max-width: 600px){
+
+    .divisaoDasAtividades{
+        height: auto;
+        padding-top: 20%;
+    }
 
     .conteudo{
         display: flex;
         flex-direction: column;
         width: 95%;
         gap: 10%;
+    }
+    .conteudo article {
+        margin-top: 10%;
     }
     
 }

@@ -6,6 +6,8 @@
     justify-items: center;
     align-items: center;
     margin-top: 5%;
+    width: auto;
+    height: auto;
 }
 .card-processo a{
     display: flex;
@@ -40,7 +42,20 @@
     text-shadow: 0.2em 0.2em 0.4em black;
 }
 
+@media(max-width: 999px){
+    .processo{
+        height: auto;
+        padding-top: 7%;
+    }
+}
+
+
+
 @media(max-width: 500px){
+    .processo{
+        height: auto;
+        padding-top: 20%;
+    }
     .card-processo{
         display: flex;
         flex-direction: column;
